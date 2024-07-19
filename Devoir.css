@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(139, 145, 144, 0.634);
+}
+/* Style sur le logo */
+.dvlogo{
+    display: flex;
+    justify-content: center;
+}
+.imglogo{
+    width:130px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgb(66, 65, 65), -5px 5px 5px rgb(66, 65, 65);
+}
+
+.imglogo:hover{
+    animation: tourne 3s ease infinite alternate;
+    transform: rotateY(0deg);
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.526);
+}
+@keyframes tourne{
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg);}
+}
+
+/* Style sur les éléments du formulaire */
+#conteneur{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.valeur, .btn{
+    width: 100%;
+    margin: 7px 0;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    background-color: white;
+    box-shadow: 4px 4px 5px rgb(88, 83, 83);
+}
+.btn{
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.btn:hover{
+    transition: all 1s ease;
+    background-color: rgba(78, 161, 161, 0.403);
+}
+
+.ajouter{
+    box-shadow: 3px 3px 4px black;
+    width: 15px;
+    height: 15px;
+}
+
+/* Style sur les liens */
+.lien{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blueviolet;
+    padding: 10px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: right;
+}
+
+/* Style sur le p de validation */
+
+#conf{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
